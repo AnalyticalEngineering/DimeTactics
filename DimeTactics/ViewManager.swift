@@ -15,7 +15,7 @@ struct ViewManager: View {
             
             Login( showsignup: $showSignup)
                 .navigationDestination(isPresented: $showSignup) {
-                    
+                    Signup(showsignup: $showSignup)
                 }
         }
         .overlay {

@@ -18,6 +18,7 @@
 		122CAA6A2B5A07A80053E9FD /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA692B5A07A80053E9FD /* View+Extension.swift */; };
 		122CAA6C2B5A0A250053E9FD /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6B2B5A0A250053E9FD /* CustomTF.swift */; };
 		122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6D2B5A12480053E9FD /* GradientButton.swift */; };
+		122CAA702B5A3D720053E9FD /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6F2B5A3D720053E9FD /* Signup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		122CAA692B5A07A80053E9FD /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		122CAA6B2B5A0A250053E9FD /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		122CAA6D2B5A12480053E9FD /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		122CAA6F2B5A3D720053E9FD /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				122CAA662B5A06660053E9FD /* Login.swift */,
+				122CAA6F2B5A3D720053E9FD /* Signup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122CAA702B5A3D720053E9FD /* Signup.swift in Sources */,
 				122CAA672B5A06660053E9FD /* Login.swift in Sources */,
 				122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */,
 				122CAA362B5A035E0053E9FD /* ViewManager.swift in Sources */,
