@@ -11,7 +11,7 @@ import SwiftUI
 struct DimeTacticsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewManager()
         }
     }
 }

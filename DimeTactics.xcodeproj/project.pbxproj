@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		122CAA342B5A035E0053E9FD /* DimeTacticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA332B5A035E0053E9FD /* DimeTacticsApp.swift */; };
-		122CAA362B5A035E0053E9FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA352B5A035E0053E9FD /* ContentView.swift */; };
+		122CAA362B5A035E0053E9FD /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA352B5A035E0053E9FD /* ViewManager.swift */; };
 		122CAA382B5A035F0053E9FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122CAA372B5A035F0053E9FD /* Assets.xcassets */; };
 		122CAA3C2B5A035F0053E9FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122CAA3B2B5A035F0053E9FD /* Preview Assets.xcassets */; };
 		122CAA462B5A03600053E9FD /* DimeTacticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA452B5A03600053E9FD /* DimeTacticsTests.swift */; };
 		122CAA502B5A03600053E9FD /* DimeTacticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA4F2B5A03600053E9FD /* DimeTacticsUITests.swift */; };
 		122CAA522B5A03600053E9FD /* DimeTacticsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA512B5A03600053E9FD /* DimeTacticsUITestsLaunchTests.swift */; };
+		122CAA672B5A06660053E9FD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA662B5A06660053E9FD /* Login.swift */; };
+		122CAA6A2B5A07A80053E9FD /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA692B5A07A80053E9FD /* View+Extension.swift */; };
+		122CAA6C2B5A0A250053E9FD /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6B2B5A0A250053E9FD /* CustomTF.swift */; };
+		122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6D2B5A12480053E9FD /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		122CAA302B5A035E0053E9FD /* DimeTactics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimeTactics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		122CAA332B5A035E0053E9FD /* DimeTacticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimeTacticsApp.swift; sourceTree = "<group>"; };
-		122CAA352B5A035E0053E9FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		122CAA352B5A035E0053E9FD /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		122CAA372B5A035F0053E9FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122CAA392B5A035F0053E9FD /* DimeTactics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DimeTactics.entitlements; sourceTree = "<group>"; };
 		122CAA3B2B5A035F0053E9FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		122CAA4B2B5A03600053E9FD /* DimeTacticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DimeTacticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		122CAA4F2B5A03600053E9FD /* DimeTacticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimeTacticsUITests.swift; sourceTree = "<group>"; };
 		122CAA512B5A03600053E9FD /* DimeTacticsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimeTacticsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		122CAA662B5A06660053E9FD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		122CAA692B5A07A80053E9FD /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		122CAA6B2B5A0A250053E9FD /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		122CAA6D2B5A12480053E9FD /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,14 @@
 		122CAA322B5A035E0053E9FD /* DimeTactics */ = {
 			isa = PBXGroup;
 			children = (
-				122CAA332B5A035E0053E9FD /* DimeTacticsApp.swift */,
-				122CAA352B5A035E0053E9FD /* ContentView.swift */,
+				122CAA682B5A07860053E9FD /* UICommon */,
+				122CAA632B5A042F0053E9FD /* LoginPackage */,
+				122CAA622B5A03BD0053E9FD /* Support */,
+				122CAA612B5A03A80053E9FD /* Managers */,
+				122CAA352B5A035E0053E9FD /* ViewManager.swift */,
+				122CAA602B5A039E0053E9FD /* Screens */,
+				122CAA5F2B5A03910053E9FD /* Views */,
+				122CAA5E2B5A03890053E9FD /* Models */,
 				122CAA372B5A035F0053E9FD /* Assets.xcassets */,
 				122CAA392B5A035F0053E9FD /* DimeTactics.entitlements */,
 				122CAA3A2B5A035F0053E9FD /* Preview Content */,
@@ -127,6 +141,76 @@
 				122CAA512B5A03600053E9FD /* DimeTacticsUITestsLaunchTests.swift */,
 			);
 			path = DimeTacticsUITests;
+			sourceTree = "<group>";
+		};
+		122CAA5E2B5A03890053E9FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		122CAA5F2B5A03910053E9FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		122CAA602B5A039E0053E9FD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		122CAA612B5A03A80053E9FD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		122CAA622B5A03BD0053E9FD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				122CAA332B5A035E0053E9FD /* DimeTacticsApp.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		122CAA632B5A042F0053E9FD /* LoginPackage */ = {
+			isa = PBXGroup;
+			children = (
+				122CAA652B5A06560053E9FD /* Views */,
+				122CAA642B5A06450053E9FD /* Models */,
+			);
+			path = LoginPackage;
+			sourceTree = "<group>";
+		};
+		122CAA642B5A06450053E9FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		122CAA652B5A06560053E9FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				122CAA662B5A06660053E9FD /* Login.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		122CAA682B5A07860053E9FD /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				122CAA692B5A07A80053E9FD /* View+Extension.swift */,
+				122CAA6B2B5A0A250053E9FD /* CustomTF.swift */,
+				122CAA6D2B5A12480053E9FD /* GradientButton.swift */,
+			);
+			path = UICommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				122CAA362B5A035E0053E9FD /* ContentView.swift in Sources */,
+				122CAA672B5A06660053E9FD /* Login.swift in Sources */,
+				122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */,
+				122CAA362B5A035E0053E9FD /* ViewManager.swift in Sources */,
+				122CAA6A2B5A07A80053E9FD /* View+Extension.swift in Sources */,
+				122CAA6C2B5A0A250053E9FD /* CustomTF.swift in Sources */,
 				122CAA342B5A035E0053E9FD /* DimeTacticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
