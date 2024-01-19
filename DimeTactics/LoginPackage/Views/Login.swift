@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Login: View {
+    @Binding var showsignup: Bool
     //MARK:  PROPERTIES
     @State private var emailID: String = ""
     @State private var password: String = ""
@@ -56,7 +57,7 @@ struct Login: View {
                     .foregroundStyle(.gray)
                 ///Register account button
                 Button("Register", action: {
-                    
+                    showsignup.toggle()
                 })
                 .fontWeight(.bold)
                 .tint(.appOrange)
