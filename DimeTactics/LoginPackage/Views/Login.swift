@@ -12,7 +12,11 @@ struct Login: View {
     //MARK:  PROPERTIES
     @State private var emailID: String = ""
     @State private var password: String = ""
-    
+    @State private var showForgottenPassword: Bool = false
+    @State private var showPasswordRecovery: Bool = false
+//OTP
+    @State private var askOTP: Bool = false
+    @State private var otpText: String = ""
     
     //MARK:  BODY
     var body: some View {
@@ -32,19 +36,12 @@ struct Login: View {
                 ///custom textfields
                 CustomTF(sfIcon: "at", hint: "Email ID", value: $emailID)
                 
-                CustomTF(sfIcon: "lock", hint: "Password",  isPassword: true, value: $emailID)
+                CustomTF(sfIcon: "lock", hint: "Password",  isPassword: true, value: $password)
                     .padding(.top, 5)
                 ///Login Button
-                Button("Forget Password?") {
-                    
-                }
-                .font(.callout)
-                .fontWeight(.heavy)
-                .tint(.appOrange)
-                .hSpacing(.trailing)
                 
                 GradientButton(title: "Login", icon: "arrow.right") {
-                    
+                    askOTP.toggle()
                 }
                 .hSpacing(.trailing)
                 ///disabling till text fields have been populated
@@ -68,6 +65,37 @@ struct Login: View {
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $showForgottenPassword, content: {
+            if #available(iOS 16.4, *) {
+                ForgottenPassword(showPasswordRecovery: $showPasswordRecovery )
+                    .presentationDetents([.height(300)])
+                    .presentationCornerRadius(30)
+            } else {
+                ForgottenPassword(showPasswordRecovery: $showPasswordRecovery)
+            }
+        })
+        ///resetting new password
+        .sheet(isPresented: $showPasswordRecovery, content: {
+            if #available(iOS 16.4, *) {
+                PasswordRecovery()
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            } else {
+                PasswordRecovery()
+                    .presentationDetents([.height(350)])
+            }
+        })
+        ///OTP prompt
+        .sheet(isPresented: $askOTP, content: {
+            if #available(iOS 16.4, *) {
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            } else {
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+            }
+        })
     }
 }
 #Preview {

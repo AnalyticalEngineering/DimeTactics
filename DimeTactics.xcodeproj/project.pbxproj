@@ -19,6 +19,10 @@
 		122CAA6C2B5A0A250053E9FD /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6B2B5A0A250053E9FD /* CustomTF.swift */; };
 		122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6D2B5A12480053E9FD /* GradientButton.swift */; };
 		122CAA702B5A3D720053E9FD /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA6F2B5A3D720053E9FD /* Signup.swift */; };
+		122CAA722B5B2B6B0053E9FD /* ForgottenPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA712B5B2B6B0053E9FD /* ForgottenPassword.swift */; };
+		122CAA742B5B352D0053E9FD /* PasswordRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA732B5B352D0053E9FD /* PasswordRecovery.swift */; };
+		122CAA762B5D83D50053E9FD /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA752B5D83D50053E9FD /* OTPView.swift */; };
+		122CAA782B5D85CE0053E9FD /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122CAA772B5D85CE0053E9FD /* OTPVerificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		122CAA6B2B5A0A250053E9FD /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		122CAA6D2B5A12480053E9FD /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		122CAA6F2B5A3D720053E9FD /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		122CAA712B5B2B6B0053E9FD /* ForgottenPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPassword.swift; sourceTree = "<group>"; };
+		122CAA732B5B352D0053E9FD /* PasswordRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecovery.swift; sourceTree = "<group>"; };
+		122CAA752B5D83D50053E9FD /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		122CAA772B5D85CE0053E9FD /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +210,10 @@
 			children = (
 				122CAA662B5A06660053E9FD /* Login.swift */,
 				122CAA6F2B5A3D720053E9FD /* Signup.swift */,
+				122CAA712B5B2B6B0053E9FD /* ForgottenPassword.swift */,
+				122CAA732B5B352D0053E9FD /* PasswordRecovery.swift */,
+				122CAA752B5D83D50053E9FD /* OTPView.swift */,
+				122CAA772B5D85CE0053E9FD /* OTPVerificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,9 +359,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				122CAA702B5A3D720053E9FD /* Signup.swift in Sources */,
+				122CAA782B5D85CE0053E9FD /* OTPVerificationView.swift in Sources */,
+				122CAA742B5B352D0053E9FD /* PasswordRecovery.swift in Sources */,
 				122CAA672B5A06660053E9FD /* Login.swift in Sources */,
+				122CAA722B5B2B6B0053E9FD /* ForgottenPassword.swift in Sources */,
 				122CAA6E2B5A12480053E9FD /* GradientButton.swift in Sources */,
 				122CAA362B5A035E0053E9FD /* ViewManager.swift in Sources */,
+				122CAA762B5D83D50053E9FD /* OTPView.swift in Sources */,
 				122CAA6A2B5A07A80053E9FD /* View+Extension.swift in Sources */,
 				122CAA6C2B5A0A250053E9FD /* CustomTF.swift in Sources */,
 				122CAA342B5A035E0053E9FD /* DimeTacticsApp.swift in Sources */,

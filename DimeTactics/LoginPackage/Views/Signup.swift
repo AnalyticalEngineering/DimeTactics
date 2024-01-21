@@ -14,6 +14,10 @@ struct Signup: View {
         @State private var password: String = ""
     @State private var fullName: String = ""
     
+    //OTP
+        @State private var askOTP: Bool = false
+        @State private var otpText: String = ""
+        
         
         //MARK:  BODY
         var body: some View {
@@ -45,14 +49,17 @@ struct Signup: View {
                     
                     CustomTF(sfIcon: "at", hint: "Email ID", value: $emailID)
                         .padding(.top, 5)
+                    
+                    CustomTF(sfIcon: "lock", hint: "Enter Password",  isPassword: true, value: $password)
+                        .padding(.top, 5)
 
-                    CustomTF(sfIcon: "lock", hint: "Confirm Password",  isPassword: true, value: $emailID)
+                    CustomTF(sfIcon: "lock", hint: "Confirm Password",  isPassword: true, value: $password)
                         .padding(.top, 5)
                     ///Login Button
                    
                     
                     GradientButton(title: "Continue", icon: "arrow.right") {
-                        
+                        askOTP.toggle()
                     }
                     .hSpacing(.trailing)
                     ///disabling till text fields have been populated
@@ -76,6 +83,17 @@ struct Signup: View {
             .padding(.vertical, 15)
             .padding(.horizontal, 25)
             .toolbar(.hidden, for: .navigationBar)
+            ///OTP prompt
+            .sheet(isPresented: $askOTP, content: {
+                if #available(iOS 16.4, *) {
+                    OTPView(otpText: $otpText)
+                        .presentationDetents([.height(350)])
+                        .presentationCornerRadius(30)
+                } else {
+                    OTPView(otpText: $otpText)
+                        .presentationDetents([.height(350)])
+                }
+            })
         }
     }
 
